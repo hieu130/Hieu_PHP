@@ -8,24 +8,25 @@
     <title>Danh sach sinh vien</title>
 </head>
 <body>
-<?php //viet php o day
-     $list = [];
-     $list [] = [
-             "name" => "Nguyen Van A",
-         "age" => 19,
-         "tel" =>"09876543"
-     ];
-     $list = [
-             "name" => "Nguyen Van B",
-         "age" => 20,
-         "tel" =>"1234534567"
-     ]
-//khi khong viet php nua thi dong lai viet html
+<?php // o day viet code php
+$list = [];
+$list[] = [
+    "name"=>"Nguyen Van An",
+    "age"=>19,
+    "tel"=>"0987654321"
+];
+$list[] = [
+    "name"=>"Nguyen Van Dung",
+    "age"=>22,
+    "tel"=>"0123456789"
+];
+// khi khong viet code php nua dong lai de viet html
 ?>
-<h1>Danh sach sinh vien:</h1>
+<h1>Danh sách sinh viên:</h1>
 <ul>
-    <?php
-    ?>
+    <?php foreach ($list as $item){ ?>
+        <li><?php echo $item["name"]."-".$item["tel"];?></li>
+    <?php }?>
 </ul>
 
 </body>
