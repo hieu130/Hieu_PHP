@@ -1,0 +1,22 @@
+*{
+    width: 100%;
+    height: auto;
+}
+.container{
+    width:60%;
+    height: auto;
+    border: 1px solid #0f0f0f;
+}
+.col-md-4{
+    margin: 5% 2% 0 2%;
+}
+.button{
+    margin-bottom: 2%;
+    margin-left:60%;
+    text-align: center;
+    width: 10%;
+    height: auto;
+}
+.back{
+    margin-left: 2%;
+}
