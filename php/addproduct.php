@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -14,23 +14,25 @@
 <div class="container">
     <div class="row">
         <div class="row">
+            <form method="post" action="luusanpham.php">
             <div class="col-md-4">
-                <label style="font-weight: 500" for="fname">Name Product</label><br/>
-                <input type="text" id="fname" name="fname" required><br/>
+                <label style="font-weight: 500" for="name">Name Product</label><br/>
+                <input type="text" id="name" name="name" required><br/>
             </div>
             <div class="col-md-4">
                 <label style="font-weight: 500" for="middle">Price</label><br/>
-                <input type="number" id="middle" name="fname"><br/>
+                <input type="number" id="middle" name="price"><br/>
             </div>
             <div class="col-md-4"></div>
         </div>
         <div class="back">
-            <a href="category.php"><< Back </a>
+            <a href="product.php"><< Back </a>
         </div>
         <div class="button">
-            <button type="button" onclick="alert('Them thanh cong')">ADD</button>
-
+            <button type="submit">ADD</button>
         </div>
+    </div>
+</form>
 </div>
 </div>
 </body>
